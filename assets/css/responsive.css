@@ -1,0 +1,34 @@
+/* media query 991 */
+@media (max-width: 991px) {
+
+    .header_list {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: var(--black-color3);
+        position: fixed;
+        height: 100%;
+        gap: 20px;
+        top: 0;
+        z-index: 5;
+        right: 0;
+        box-shadow: rgba(0, 0, 0, 0.9) -4px 9px 25px -6px;
+        transform: translateX(100%);
+        max-width: 350px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    .header_list.active {
+        right: 0;
+        transform: translateX(0%);
+    }
+
+    .humburger {
+        display: flex;
+    }
+
+    .close_menu {
+        display: flex;
+    }
+}
