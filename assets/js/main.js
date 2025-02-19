@@ -77,5 +77,6 @@ $('.perfectSlider').slick({
     slidesToScroll: 3,
     dots: true,
     speed: 500,
-    autoplaySpeed: 1000,
+    autoplay: true,     
+    autoplaySpeed: 2000, 
 });
