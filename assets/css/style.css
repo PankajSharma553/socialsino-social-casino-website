@@ -110,6 +110,14 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
 /* header section start */
 
 .header {
@@ -388,7 +396,7 @@ a {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 60%);
+  background: rgba(0, 0, 0, 70%);
 }
 
 .banner_content {
@@ -622,10 +630,7 @@ a {
 }
 
 .why_contnet p {
-  font-size: 1rem;
-  font-weight: 400;
   margin-bottom: 12px;
-  line-height: 100%;
   color: var(--white-color);
 }
 
@@ -791,4 +796,46 @@ a {
 
 .SpinWin_content p:last-child {
   margin-bottom: 0;
+}
+
+/* testimonial section */
+.testimonial {
+  background-color: #0f1c23;
+}
+
+.testimonial_wrapper .main-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--white-color);
+}
+
+.testimonial_card {
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.testimonial_cardProfilSec {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.testimonial_content h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--smoke-color);
+}
+.testimonial_desc{
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.testimonial_desc a{
+  color: var(--success-color);
 }

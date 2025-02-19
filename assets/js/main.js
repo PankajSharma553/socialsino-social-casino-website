@@ -80,3 +80,14 @@ $('.perfectSlider').slick({
     autoplay: true,     
     autoplaySpeed: 2000, 
 });
+
+$('.testimonialSec').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    speed: 500,
+    autoplay: true,     
+    autoplaySpeed: 2000, 
+    arrows: false
+});
