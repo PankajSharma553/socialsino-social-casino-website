@@ -14,6 +14,19 @@ a:hover {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 10px;
+  line-height: 135%;
+}
+
 :root {
   --theme-color: #45F882;
   --theme-color2: #FFBE18;
@@ -84,6 +97,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
+  color: var(--white-color);
 }
 
 .btn {
@@ -248,7 +262,8 @@ p {
 }
 
 .footer_topbar p {
-  color: white;
+  color: var(--white-color);
+  line-height: 165%;
   text-align: center;
 }
 
@@ -263,6 +278,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -370,7 +388,7 @@ p {
 }
 
 .copyright-text a {
-  color: var(--success-color);
+  color: var(--theme-color);
 }
 
 /* footer section end */
@@ -396,7 +414,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 70%);
+  background: rgba(0, 0, 0, 50%);
 }
 
 .banner_content {
@@ -418,13 +436,14 @@ p {
   margin-bottom: 1rem;
   font-weight: 500;
   line-height: 120%;
-  color: var(--success-color);
+  /* color: var(--success-color); */
+  color: var(--white-color);
 }
 
 .banner_content h1 {
   color: var(--white-color);
   margin-bottom: 1rem;
-  line-height: 130%;
+  /* line-height: 130%; */
   font-size: 3rem;
   font-weight: 800;
 }
@@ -720,9 +739,11 @@ p {
 
 .playTogether_inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-block: 4rem 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .playTogether_card {
@@ -740,22 +761,22 @@ p {
 .playTogether_content h4 {
   font-size: 24px;
   font-weight: bold;
-  color: var(--black-color);
+  color: #0f1c23;
 }
 
 .playTogether_content p {
   font-size: 16px;
   font-weight: 400;
-  color: var(--black-color);
+  color: #0f1c23;
 }
 
 .playTogether_desc a {
-  color: var(--success-color);
+  color: var(--theme-color);
 }
 
 /* SpinWin section */
 .SpinWin {
-  background-image: url("../images/spinPS.jpg");
+  background-image: url("../images/spinwin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -776,13 +797,13 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(1, 1, 2, 60%);
+  background-color: rgba(0, 0, 0, 50%);
 }
 
 .SpinWin_content {
   position: relative;
   z-index: 2;
-  background-color: rgba(1, 1, 2, 60%);
+  background-color: rgba(0, 0, 0, 40%);
   padding: 2rem;
   border-radius: 8px;
   max-width: 950px;
@@ -810,9 +831,9 @@ p {
 }
 
 .testimonial_card {
-  border: 1px solid var(--gray-color);
   border-radius: 4px;
   padding: 1.5rem;
+  background-color: var(--white-color);
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -824,18 +845,318 @@ p {
   border-radius: 50%;
   border: 2px solid var(--white-color);
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--black-color);
+}
+
+.testimonial_cardProfil {
+  background-image: url("../images/dap.jpg");
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .testimonial_content h6 {
   font-size: 18px;
   font-weight: 700;
-  color: var(--smoke-color);
+  color: var(--black-color);
 }
-.testimonial_desc{
+
+.testimonial_content p {
+  color: var(--black-color);
+}
+
+.testimonial_desc {
   margin-top: 4rem;
+  text-align: center;
+
+}
+
+.testimonial_desc a {
+  color: var(--success-color);
+}
+
+.playTogether_iconWrapp {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #0f1c23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playTogether_icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("../images/play-together1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ==========================How to play section  */
+/* .howToplay_inner{
+  display: flex;
+  justify-content: center;
+} */
+.howToplay {
+  background-color: #0f1c23;
+
+}
+
+.howToplay_cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.howToplay_right {
+  width: 48%;
+}
+
+.howToplay_right h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 18px;
+  color: var(--white-color);
+}
+
+.howToplay_right ul {
+  padding-left: 24px;
+}
+
+.howToplay_left {
+  width: 48%;
+}
+
+.howToplay_leftImg {
+  background-image: url("../images/bannerHome.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.howToplay_wrapper h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.howToplay_cards.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.howToplay_wrapper p {
   text-align: center;
 }
 
-.testimonial_desc a{
+.howToplay_topBar {
+  margin-bottom: 4rem;
+}
+
+.howToplay_rightContent {
+  padding: 2rem;
+}
+
+.why_topbar {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.mechanics_img {
+  background-image: url("../images/mechanics-img1.webp");
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 12px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.mechanics_inner {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.mechanics_cards {
+  width: 31%;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.mechanics_content h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: normal;
+  color: var(--white-color);
+}
+
+.mechanics_content {
+  padding: 8px 12px;
+}
+
+.mechanics_content ul {
+  padding-left: 24px;
+}
+
+.mechanics_content ul li {
+  list-style: disc;
+}
+
+/* .mechanics_content ul li::marker{
   color: var(--success-color);
+} */
+
+/* infoSec section */
+
+.infoSec_wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.infoSec_content {
+  margin-bottom: 1.8rem;
+}
+
+.infoSec_content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.infoSec_content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.infoSec_content ul {
+  margin-bottom: 1rem;
+  padding-left: 24px;
+}
+
+.infoSec_content ul li {
+  list-style: disc;
+}
+
+.infoSec_content p a {
+  color: var(--theme-color);
+}
+
+.contact {
+  background-image: url("../images/jiji-bg2.png");
+}
+
+.contact_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_right {
+  width: 48%;
+}
+
+.contact_left {
+  width: 48%;
+}
+
+.contact_right h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact_leftImg {
+  background-image: url("../images/contact-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+.input-container input,
+select#Information,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid var(--theme-color);
+  background: var(--black-color3);
+  color: var(--white-color);
+
+}
+
+.input-container input::placeholder,
+select#Information::placeholder,
+textarea::placeholder {
+  color: var(--body-color);
+}
+
+select#Information {
+  color: var(--body-color);
+}
+
+textarea {
+  resize: none;
+}
+
+.contact_btn {
+  margin-bottom: 3rem;
+  color: var(--white-color);
+}
+
+.contact_btm {
+  color: var(--white-color);
+  margin-top: 1.5rem;
+}
+
+.contact_tobar {
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 4rem;
+}
+
+.contact_tobar p a {
+  color: var(--theme-color);
+}
+
+.infoSec_content .infoSec_List {
+  padding-left: 0;
+}
+
+.infoSec_content .infoSec_List li {
+  list-style: none;
 }
