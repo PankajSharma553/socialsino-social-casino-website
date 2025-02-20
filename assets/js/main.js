@@ -77,7 +77,7 @@ $('.perfectSlider').slick({
     slidesToScroll: 3,
     dots: true,
     speed: 500,
-    autoplay: true,     
+    autoplay: false,     
     autoplaySpeed: 2000, 
 });
 
@@ -87,7 +87,7 @@ $('.testimonialSec').slick({
     slidesToScroll: 3,
     dots: true,
     speed: 500,
-    autoplay: true,     
+    autoplay: false,     
     autoplaySpeed: 2000, 
     arrows: false
 });
